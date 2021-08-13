@@ -3,6 +3,7 @@ package com.rev.pro.Controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,8 +19,11 @@ import com.rev.pro.service.EmployeeRegistrationServiceImp;
 
 @WebServlet("/RebEmpApp")
 public class ReberServlet extends HttpServlet {
-	
+	static Logger logger = Logger.getLogger("ReberServlet.class");
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		logger.info("============================== Reimbursement Details Servlet controller ==================================");
+		
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		

@@ -23,5 +23,8 @@ public interface EmployeeRegistrationDao {
 	public void ManagerUpdateRequest(Integer reimbursementId,String status);
 	public List<ReimbursementEntity> viewonlyaccept();
 	public List<ReimbursementEntity> viewonlyreject();
+	
+	//update part
+	public void UpdateEmployee(EmployeeDetails employee);
 
 }

@@ -3,6 +3,7 @@ package com.rev.pro.Controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,9 +17,11 @@ import com.rev.pro.service.EmployeeRegistrationServiceImp;
 
 
 public class Viewallapproved extends HttpServlet {
-	
+	static Logger logger = Logger.getLogger("Viewallapproved.class");
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		
+		logger.info("=============================== Manager view Approved controller ==================================");
 				response.setContentType("text/html");
 				PrintWriter out=response.getWriter();
 				

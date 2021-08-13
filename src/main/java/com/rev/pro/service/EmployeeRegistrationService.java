@@ -21,5 +21,8 @@ public interface EmployeeRegistrationService {
 	public void ManagerUpdateRequest(Integer reimbursementId,String status);
 	public List<ReimbursementEntity> viewonlyaccept();
 	public List<ReimbursementEntity> viewonlyreject();
+	
+	//update
+	public void UpdateEmployee(EmployeeDetails employee);
 
 }

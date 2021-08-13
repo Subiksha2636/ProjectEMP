@@ -88,6 +88,10 @@ body{ margin :0;
 			<input type="submit" value=" Reimbursement Application">
 			</form>
 			
+			<form action="UpdateEmployee.jsp">
+			<input type="submit" value=" Update Employee">
+			</form>
+			
 			<form action="Rebdetails"  method="post">
 			<input type="submit" value=" View Your Reimbursement Details">
 			</form>

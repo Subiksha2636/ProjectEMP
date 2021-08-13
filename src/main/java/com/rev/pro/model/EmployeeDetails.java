@@ -1,12 +1,17 @@
 package com.rev.pro.model;
 
+import java.util.logging.Logger;
+
 public class EmployeeDetails {
+	
+	
 	private Integer employeeId;
 	private String password;
 	private String employeeName;
 	private String designation;
 	private String department;
 	private String email;
+	
 	
 	
 	//private String type;
@@ -48,6 +53,7 @@ public class EmployeeDetails {
 	}
 	@Override
 	public String toString() {
+		
 		return "EmployeeDetails [employeeId=" + employeeId + ", password=" + password + ", employeeName=" + employeeName
 				+ ", designation=" + designation + ", department=" + department + ", email=" + email + "]";
 	}

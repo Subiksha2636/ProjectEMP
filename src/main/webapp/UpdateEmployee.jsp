@@ -2,11 +2,10 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<html>
 <head>
+<meta charset="ISO-8859-1">
+<title>Update Employee </title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title> Registration Details </title>
 <style type="text/css">
 body{
 		margin : 0;
@@ -23,15 +22,14 @@ body{
 </style>
 </head>
 <body>
-	<div>
-	<h1> REGISTRATION  PAGE </h1>
+
+
+
+<div>
+	<h2><b>Update your Employee  Details</b> </h2>
 	
-	<form action="EmployeeController" method="post">
+	<form action="UpdateEmmployee" method="post">
 	
-	<div>
-   <label>	Employee ID</label>
-     <Input  type="text" name="id" required><br/><br/>
-	</div>
 		<div>
         <label>Email ID</label>
         <input  type="email" name="email" required><br/><br/>
@@ -64,12 +62,10 @@ body{
         <input type="submit" value="submit"> 
         </div>
       
-      <p><b>Already have an account?</b><a href="Login.jsp"><b>user login here</b></a> </p>
+      <p><b>Already have an account?</b><a href="Employee.jsp"><b>user login here</b></a> </p>
+     </form>
+    </div>
       
 
-  </form>
-</div>
-	
-	
 </body>
 </html>

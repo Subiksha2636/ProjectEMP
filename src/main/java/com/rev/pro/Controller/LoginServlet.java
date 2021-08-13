@@ -3,6 +3,7 @@ package com.rev.pro.Controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,8 +21,10 @@ import com.rev.pro.service.EmployeeRegistrationServiceImp;
 
 @WebServlet("/Login")
 public class LoginServlet extends HttpServlet {
-	
+	static Logger logger = Logger.getLogger("LoginServlet.class");
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		logger.info("================= Login Employee Controller ======================");
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
@@ -44,8 +47,10 @@ public class LoginServlet extends HttpServlet {
 		boolean isPresent=false;
 		RequestDispatcher rd=null;
 		
+		//email.equals(e.getEmail())
+		
 		for(EmployeeEntity e:elist) {
-			if(email.equals(e.getEmail()) && empid.equals(e.getEmployeeId()) && emp.equals("employee") && (!(mana.equals("manager"))))
+			if( email.equals(e.getEmail()) && empid.equals(e.getEmployeeId()) && emp.equals("employee") && (!(mana.equals("manager"))))
 			{
 				isPresent=true;
 				break;
